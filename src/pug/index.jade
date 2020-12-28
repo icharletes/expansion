@@ -1,0 +1,187 @@
+doctype html
+html(lang='cl')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title LANDING 
+    <!--css-->
+    //-link(href='css/owl.carousel.css', rel='stylesheet')
+    //-link(href='css/owl.theme.default.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    <!--[if IE 9]>
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    <![endif]--> 
+  body
+           
+
+
+        .container.bg-Mobile
+                header.headerMobile
+                    .col-sm-12.PNONE
+                        img(src="img/logo-metrogas.svg", alt="Cerrar")
+                    div.btnagenda#botonocultamuestra04 Agenda aquí       
+                    
+
+
+
+        .container.posR
+            .form-box
+
+
+                .agenda#divocultamuestra01
+                    .cerrar#botonocultamuestra05 
+                    form.form_info
+
+                        .form_info-title Solicita información aquí
+
+                        .form_info-form
+                            .form_info-form_wrap
+                                label Nombre
+                                input(type="text")
+
+                            .form_info-form_wrap
+                                label Teléfono
+                                input(type="text")
+
+                            .form_info-form_wrap
+                                label Email
+                                input(type="text") 
+
+                            .form_info-form_wrap
+                                label Comuna
+                                .selectWrap
+                                    select.selectcomuna(name='')  
+                                      option(value='') Seleccionar
+                                      option(value='') comuna 02
+                                      option(value='') comuna 03
+                                      option(value='') comuna 04
+
+                            .form_info-form_wrap
+                                label Dirección
+                                input(type="text") 
+
+                            .form_info-form_wrap
+                                input(type="submit", value="Enviar") 
+                            .clearfix 
+
+
+            .row
+                .col.PNONE
+                    .hero
+                        h1 Conéctate<br class="h1none"> a Metrogas
+                            span y que lo <br class="h1none">bueno<br class="h1none2"> no pare!
+                        .hero__image
+                            .hero__claim
+                                img(src="img/hero__claim.png")
+
+                            img(src="img/cocina.jpg")
+            .row
+                .col.PNONE
+                    nav.navigation
+                        ul
+                            li.active: a(href="#") Beneficios
+                            li: a(href="planes.html") Conoce nuestros planes
+
+        section.beneficios
+ 
+            .beneficios_aux-w
+                .container
+                    .row
+                        .col
+                            h2 Beneficios de <span>conectarse a<br class="br-none"> Metrogas</span>
+            
+                    .row
+                        .col-md-4
+                            .beneficios_box01
+                                .beneficios_box-boton#botonocultamuestra
+                                    img(src="img/ico-01.jpg", alt="")
+                                    p SEGURO  
+                                    .arrow_green
+                                        img(src="img/arrow_green.jpg", alt="")
+                                .beneficios_box_content01#divocultamuestra(style='display:none;')
+                                    p.beneficios_text.beneficios_text_colorgray Revisamos las redes<br> en detalle dejando<br> todo en norma<br> con la <strong>SEC</strong>.
+                                    //-p.beneficios_text.beneficios_text_colorgreen Metrogas es más seguro.
+
+
+                        .col-md-4
+                            .beneficios_box01
+                                .beneficios_box-boton#botonocultamuestra02
+                                    img(src="img/ico-02.jpg", alt="")
+                                    p.blue GAS NATURAL CONTINUO  
+                                    .arrow_green
+                                        img(src="img/arrow_blue.jpg", alt="")
+                                .beneficios_box_content01.blue-line#divocultamuestra02(style='display:none;')
+                                    p.beneficios_text.beneficios_text_colorgray Servicio<br> disponible 24/7<br> sin la necesidad<br> de reposición.
+                                    //-p.beneficios_text.beneficios_text_colorblue Metrogas mejora su calidad de vida.
+                        .col-md-4
+                            .beneficios_box01
+                                .beneficios_box-boton#botonocultamuestra03
+                                    img(src="img/ico-03.jpg", alt="")
+                                    p.greendouble CONEXIÓN GRATIS 
+                                    .arrow_green
+                                        img(src="img/arrow_green.jpg", alt="")
+                                .beneficios_box_content01#divocultamuestra03(style='display:none;')
+                                    p.beneficios_text.beneficios_text_colorgray Contamos con<br> distintos planes que te<br> permiten pagar un<br> precio fijo mensual y<br> disfrutar de todos sus<br> beneficios.
+                                    //-p.beneficios_text.beneficios_text_colorgreen Más conveniente.
+                                    //-.gas
+                                        img(src="img/gas.jpg", alt="")
+        .container
+            .row
+                .col
+                    .line
+
+        section.beneficios.beneficios_aux_m
+            .container
+                .row
+                    .col
+                        .titleH2 Contamos con<span>grandes<br class="br-none"> beneficios</span>          
+                        
+            .container
+                .row
+                    .col-md-3
+                        .bene_concepto
+                            .bene_concepto_img
+                                img(src="img/ico-04.jpg", alt="")
+                            .bene_concepto-title Productos de <span>alta calidad</span>
+                            .bene_concepto_text Contamos con variedad en equipamiento para calefacción (calderas y estufas). Además de ofrecer la asesoría necesaria para tus proyectos.
+                    .col-md-3
+                        .bene_concepto
+                            .bene_concepto_img
+                                img(src="img/ico-05.jpg", alt="")
+                            .bene_concepto-title Metrobolsas
+                            .bene_concepto_text.MT30 Bolsas de gas natural que te permiten tener un ahorro significativo en calefacción en comparación a otros combustibles.
+                    .col-md-3
+                        .bene_concepto
+                            .bene_concepto_img
+                                img(src="img/ico-06.jpg", alt="")
+                            .bene_concepto-title Club Metrogas
+                            .bene_concepto_text.MT30 Descuentos beneficios y canjes por parte de Metrogas.
+                    .col-md-3
+                        .bene_concepto
+                            .bene_concepto_img
+                                img(src="img/ico-07.jpg", alt="")
+                            .bene_concepto-title Metroplanes
+                            .bene_concepto_text.MT30 Planes a tu medida, que garantizan un valor de m<sup>3</sup> fijo durante 12 meses.                     
+
+
+                        
+
+
+              
+
+
+
+
+
+
+
+        //- jQuery (necessary for Bootstrap's JavaScript plugins)
+        script(src='https://code.jquery.com/ui/1.10.2/jquery-ui.js')
+        script(src='https://code.jquery.com/jquery-1.11.1.min.js')
+        script(src='js/owl.carousel.min.js')
+        script(src='js/main.js')
+
+

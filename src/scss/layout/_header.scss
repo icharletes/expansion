@@ -1,0 +1,235 @@
+
+body{
+	font-family: Arial, Tahoma, Sans-serif;
+	font-size: 16px;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.PNONE{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.containerMD{
+	@include desde (md){
+		background-color: aliceblue;
+		max-width: 960px;
+		margin:0 auto;
+	}
+	@include desde (lg){
+		max-width: 1140px;
+	}
+
+}
+
+.bg-Mobile{
+	background-color: var(--color_Header);
+	position: relative;
+	.btnagenda{
+		background-color:white;
+		color:var(--color_Header);
+		position: absolute;
+		right: 15px;
+		top: 20px;
+		border-radius: 5px;
+		padding: 5px 10px;
+		font-size: .7em;
+		text-align: right;
+		width: 105px;
+		font-weight: bold;
+		z-index: 99;
+		&:before{
+			content: url(../img/agenda.svg);
+			position: absolute;
+			left: 7px;
+			top: 5px;
+			width: 13px;
+		}
+	}
+}
+
+
+
+
+
+.headerMobile{
+	padding: 20px 0px;
+	background-color: var(--color_Header);
+	width: 100%;
+	img{
+		width: 160px;
+	}
+	@include desde (md){
+		display: none;
+	}
+}
+
+
+.hero__image{
+	clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+	// background: url('../img/cocina.jpg') right top no-repeat;
+	// background-size: cover;
+ //    background-position-x: 140px;	
+    height: 220px;
+    position: absolute;
+    width: 100%;
+    top:-1px;
+    right: -100px;
+    @include desde (xs){
+    	width: 80%;
+    }
+    @include desde (md){
+    	height: 305px;
+    }
+    img{
+    	position: relative;
+    	top:-3px;
+    	left: -92px;
+    	@include desde (xs){
+    		top:-55px;
+    	}
+    	@include desde (lg){
+    		width: 90%;
+    		left: -28px;
+    	}
+    }
+    @include desde (sm){
+    	background-size:60%;
+    	background-position-x: 310px;
+    }
+	@include desde (md){
+		background-position-x: 100%;
+		background-size: contain;
+		width: 60%;
+	}
+	@include desde (lg){
+		height: 305px;
+	}
+	.hero__claim{
+		position: absolute;
+		bottom:0;
+		width: 150px;
+		left: 110px;
+		z-index: 1;
+		@include desde (xs){
+			bottom: -40px;
+		}
+		@include desde (sm){
+			left: 130px;
+		}
+		@include desde (lg){
+			width: 222px;
+			left:70px;
+		}
+	}
+}
+
+.hero{
+	position: relative;
+	height: 210px;//220
+	overflow: hidden;
+	@include desde (md){
+		height: 300px;
+	}
+	// background: url('../img/cocina.jpg') right top no-repeat;
+	// background-size: cover;
+ //    background-position-x: 140px;	
+ //    height: 220px;
+ //    position: relative;
+ //    @include desde (sm){
+ //    	background-size:60%;
+ //    	background-position-x: 310px;
+ //    }
+	// @include desde (md){
+	// 	background-position-x: 100%;
+	// 	background-size: contain;
+	// }
+	// @include desde (lg){
+	// 	height: 270px;
+	// }
+
+  //   &:before{
+  //   	content:"";
+  //   	position: absolute;
+  //   	left: 140px;
+  //   	top: 0;
+		// width: 0;
+		// height: 0;
+		// border-style: solid;
+		// border-width: 220px 30px 0 0;
+		// border-color: #008FD1 transparent transparent transparent;	
+		// z-index: 0;
+		// background-image: url(../img/trama.png);	
+		// @include desde (sm){
+		// 	left:310px;
+		// }
+		// @include desde (md){
+		// 	left: 630px;
+		// }
+		// @include desde (lg){
+		// 	left: 734px;
+		// 	border-width: 270px 30px 0 0;
+		// }
+  //   }
+    &:after{
+    	background: #008FD1 url(../img/trama.png);
+    	background-size: 70%;
+    	content: "";
+    	left: 0;
+    	top: 0;
+    	right: 0;
+    	position: absolute;
+    	width: 100%;
+    	height: 100%;
+    	z-index: -1;
+    }
+	h1{
+		font-family: 'khandregular', Arial;
+		color:var(--white);
+		font-size:1.5em;
+		text-align: left;
+		line-height: 1;
+		margin-bottom: 0;
+		position: relative;
+		z-index: 1;
+		padding-top: 50px;
+		padding-left:15px;
+		span{
+			font-family: 'khandbold', Arial;
+			display: block;
+		}
+		@include desde (xs){
+			font-size: 1.9em;
+			padding-top: 30px;
+		}
+		@include desde (sm){
+			font-size: 1.9em;
+			padding-top: 65px;
+		}
+		@include desde (md){
+			font-size: 2.4em;
+			padding-top: 120px;
+			margin-left: 100px;			
+		}
+		@include desde (lg){
+			font-size: 3.2em;
+			padding-top: 100px;
+			left:-50px;
+		}
+	}
+	@include desde (sm){
+		.h1none{
+			display: none;
+		}
+	}
+	@include desde (md){
+		.h1none2{
+			display: none;
+		}
+	}	
+
+}

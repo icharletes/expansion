@@ -1,0 +1,630 @@
+.posR{
+	@include desde (md){
+		position: relative;
+	}	
+}
+.beneficios_aux-w{
+	@include desde (md){
+		max-width: 580px;//720
+		margin-left: auto;
+		margin-right:auto;
+		position: relative;
+	}	
+}
+
+.beneficios_aux_m{
+		@include desde (md){
+		max-width: 660px;//740
+		margin-left: auto;
+		margin-right:auto;
+	}
+}
+
+.beneficios{
+
+	padding: 25px 0;
+	position: relative;
+	.caja-formulario{
+		right: 0;
+		width: 180px;
+		p{
+			position: fixed;
+			width: 180px;
+		}
+	}
+
+	h2{
+		font-family: 'Archivo Black', Arial, Tahoma, sans-serif;
+		font-size: 1.1em;
+		text-align: center;
+		color:var(--celeste02);
+		line-height: 1;
+		text-align: center;
+		position: relative;
+		width: 280px;
+		margin-right: auto;
+		margin-left: auto;
+		@include desde (sm){
+			font-size: 1.3em;
+			margin-bottom: 1.5em;
+    		margin-top: 1.2em;
+		}
+		span{
+			display: block;
+			font-size: 1.5em;			
+		}
+		
+		@include desde (sm){
+			.br-none{
+				display: none;
+			}
+		}
+
+		&:before{
+			content: url(../img/globo.gif);
+			position: absolute;
+			left: -25px;
+			top: -40px;
+    		transform: scale(0.2);
+			z-index: 10;
+			@include desde (sm){
+				transform: scale(0.3);
+				left:-60px;
+			}
+		}
+		@include desde (sm){
+			width: 430px;
+		}
+	}
+
+	.titleH2{
+		font-family: 'Archivo Black', Arial, Tahoma, sans-serif;
+		font-size: 1.1em;
+		text-align: center;
+		color:var(--celeste02);
+		line-height: 1;
+		text-align: center;
+		position: relative;
+		width: 280px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 1em;
+		margin-top: 1em;
+
+		@include desde (sm){
+			font-size: 1.3em;
+			width: 430px;
+		}
+
+		@include desde (sm){
+			.br-none{
+				display: none;
+			}
+		}		
+
+		span{
+			display: block;
+			font-size: 1.5em;			
+		}
+		&:after{
+			content: url(../img/globo-2.jpg);
+			position: absolute;
+			right: -48px;
+			top: -34px;
+    		transform: scale(0.2);
+			z-index: 10;
+			@include desde (sm){
+				right: -65px;
+				top:-45px;
+			}
+		}
+
+	}
+	
+	.beneficios_box01{
+		text-align: center;
+		margin-bottom: 1.3em;
+		cursor:pointer;
+
+		.beneficios_box-boton{
+			margin-left: auto;
+			margin-right:auto;
+			transition: all .3s;
+			&:hover{
+				transform: scale(1.03);
+			}
+			img{
+				width:70px; 
+				margin-bottom: .9em;
+				@include desde (lg){
+					width: 90px;
+				}
+			}
+			p{
+				color: var(--white);
+				background-color: var(--verde02);
+				padding: 13px 12px;
+				font-family: 'Archivo Black', Arial, Tahoma, sans-serif;
+				border-radius: 8px;
+				width: 155px;
+				margin-left: auto;
+				margin: auto;
+				text-transform: uppercase;
+				font-size: 0.875em;
+				line-height: 1;
+			}
+
+			.blue{
+				background-color: var(--celeste02);
+				padding: 7px 12px;
+			}
+
+			.greendouble{
+				@extend .blue;
+				background-color: var(--verde02);
+			}
+
+			.arrow_green{
+				width: 15px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: .6em;
+				img{
+					margin-bottom: 0;
+				}
+			}			
+		}
+	}//fin
+	.beneficios_box_content01{
+		border:2px solid var(--verde02);
+		border-radius: 8px;
+		width: 190px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 1em;
+		background-color: #fff;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.19);		
+		@include desde (sm){
+			height: 135px;//180
+			width: 100%;
+			padding: .9em;
+		}
+		@include desde (lg){
+			padding: .9em .6em;
+		}
+		.beneficios_text{
+			font-family: Arial, Tahoma, sans-serif;
+			text-align: center;
+			font-weight: bold;
+			font-size: .8em;
+			line-height: 16px;
+			margin-bottom: 0;
+		}
+		.beneficios_text_colorgray{
+			color: #8C8C8C;
+		}
+
+		.beneficios_text_colorblue{
+			color:var(--celeste02);
+			font-family: 'Archivo Black', Arial, Tahoma, sans-serif;
+			margin-top: 1em;
+		}
+
+		.beneficios_text_colorgreen{
+			margin-top: 1em;
+			color:var(--verde02);
+			font-family: 'Archivo Black', Arial, Tahoma, sans-serif;
+		}
+		.gas{
+			width: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1em;
+		}
+	}
+	.blue-line{
+		border:2px solid var(--celeste01);
+	}
+
+	//beneficios conceptos
+
+	.bene_concepto{
+		width: 100%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		.bene_concepto_img{
+			width: 70px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1em;
+			@include desde (lg){
+				width: 90px;
+			}
+		}
+		.bene_concepto-title{
+			font-family: 'Archivo Black', Arial, Tahoma, sans-serif;
+			color:var(--celeste02);
+			text-align: center;
+			font-size: 1.063em;
+			line-height: 1.2;
+			span{
+				display: block;
+			}
+			@include desde (md){
+				font-size: 0.863em;
+			}
+			@include desde (lg){
+				font-size: 1.063em;
+			}
+		}
+		.bene_concepto_text{
+			text-align: center;
+			font-size: 1em;
+			color:#8C8C8C;
+			font-size: 0.750em;
+			margin-top: 10px;
+			font-weight: bold;
+			font-family: Arial, Tahoma, sans-serif;
+			width: 65%;
+			margin-left: auto;
+			margin-right: auto;
+			@include desde (sm){
+				width: 100%;
+			}
+			@include desde (md){
+				font-size: .7em;
+			}
+		}
+
+		.MT30{
+			@include desde (sm){
+				margin-top: 30px;
+			}
+		}
+	}
+
+}//fin
+
+
+
+	.line{
+		width: 100%;
+		height: 4px;
+		background:transparent url('../img/dot.jpg') left center repeat;
+		background-size: contain;
+		@include desde (sm){
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@include desde (md){
+			width: 49%;
+		}
+
+		@include desde (lg){
+			width: 44%;
+		}
+	}
+
+
+		.preciosSection{
+			margin-top: 1em;//2
+			@include desde (sm){
+				margin-top: 4em;
+			}
+		}
+
+		.owl-carousel .nav-btn{
+		  height: 38px;
+		  //position: absolute;
+		  width: 18px;
+		  cursor: pointer;
+		  //top: 100px !important;
+		}
+
+		.owl-carousel .owl-prev.disabled,
+		.owl-carousel .owl-next.disabled{
+		pointer-events: none;
+		opacity: 0.2;
+		}
+
+		.owl-carousel .prev-slide{
+		  background: url(../img/left.png) no-repeat scroll 0 0;
+		  left: 0px;
+		  background-size: cover;
+		  position: absolute;
+		  left: 0;
+		  top: 6px;
+		  @include desde (sm){
+		  	left:-20px;
+		  }
+		}
+		.owl-carousel .next-slide{
+		  background: url(../img/right.png) no-repeat scroll -2px 0;
+		  right: 0px;
+		  background-size: cover;
+		  position: absolute;
+		  right: 0;
+		  top: 6px;
+		  @include desde (sm){
+		  	right:-20px;
+		  }
+		}
+ 
+
+	.chip{
+		@include desde (md){
+			margin-left: 40px;
+		}
+	}
+	.owl-carousel{
+
+		
+		.item {
+		    text-align: center;
+		    //padding: 50px;
+			//margin-bottom:80px;
+		    opacity: .8;
+		    -webkit-transform: scale3d(0.85, 0.85, 1);
+		    transform: scale3d(0.85, 0.85, 1);
+		    -webkit-transition: all 0.3s ease-in-out;
+		    -moz-transition: all 0.3s ease-in-out;
+		    transition: all 0.3s ease-in-out;
+		}
+
+		.owl-item.active.center .item {
+		    opacity: 1;
+		    -webkit-transform: scale3d(1.0, 1.0, 1);
+		    transform: scale3d(1.0, 1.0, 1);
+		}
+		.owl-carousel .owl-item img {
+		    transform-style: preserve-3d;
+		    //max-width: 90px;
+    		//margin: 0 auto 17px;
+		}
+
+		.owl-nav{
+			display: none;
+			@media (min-width: 425px) {
+				display: block!important;
+				position: absolute;
+				left: 0;
+				right: 0;
+				width: 100%;
+				//background: red;
+				top: 30%;
+			}
+		}
+		#precios{
+			@include desde (sm){
+				margin-left: 40px;
+			}
+		}
+		.precios{
+			text-decoration: none;
+			background-color: #E7E7E7;
+			display: block;
+			width: 290px;
+			margin-right: auto;
+			margin-left: auto;
+			@media (min-width: 425px) and (max-width: 767px) {
+				width: 300px;
+			}
+			@include desde (sm){
+				width: auto;
+
+			}
+			// transform:scale(.9);
+			transition: all .3s;
+			// @include desde (md){
+			// 	&:hover{
+			// 		transform:scale(1);
+			// 	}
+			// }
+			.precios_box{
+
+				.precios_title{
+					font-size: 1.375em;
+					color:#606060;
+					padding-top: 9px;
+					padding-bottom: 4px;
+					font-family: 'khandregular',Arial, Tahoma, sans-serif;
+					text-align: center;
+					position: relative;
+
+
+				}
+				.precios_text{
+					font-family: 'Montserrat',Arial, Tahoma, sans-serif;
+					font-weight: 600;
+					background-color: var(--celeste02);
+					padding: .7em 0;//.9
+					text-align: center;
+					color: white;
+					font-size:1.3em;//1.5
+					span{
+						font-weight: 700;
+					}
+					&:after{
+						content: "+";
+						position: absolute;
+						font-family: 'khandbold',Arial, Tahoma, sans-serif;
+						font-weight: bold;
+						left: 0;
+						right: 0;
+						top: 83px;//96
+						color:white;
+						font-size: 1.7em;
+						z-index: 2;
+					}
+				}
+
+				.precios_text_paga{
+					font-family: 'Montserrat',Arial, Tahoma, sans-serif;
+					font-weight: 600;
+					background-color: var(--celeste02);
+					padding: .9em 0;
+					text-align: center;
+					color: white;
+					font-size:1em;//1.2
+					line-height: 1;
+				}
+
+				.precios_text_giftcard{
+					background-color: #80BE2E;
+					text-align: center;
+					color:white;
+					font-family: 'Montserrat',Arial, Tahoma, sans-serif;
+					font-weight: 700;
+					line-height: 1;
+					font-size: 1.4em;
+					padding: .9em 0;
+					position: relative;
+
+					.small{
+						font-size: .7em;
+						font-family: 'khandregular',Arial, Tahoma, sans-serif;
+						margin-top: 5px;
+					}
+					.giftcard{
+						position: absolute;
+						top: 15px;
+						width: 70px;
+						left: 6px;
+						@include desde (sm){
+							top: 23px;
+							width: 50px;
+						}
+						@include desde (lg){
+							width: 65px;
+						}
+					}
+				}
+
+
+				.precios_text_metroplanes{
+					background-color: #80BE2E;
+					text-align: center;
+					color:white;
+					font-family: 'Montserrat',Arial, Tahoma, sans-serif;
+					font-weight: 600;
+					line-height: 1;
+					font-size: 1.7em;
+					padding: .9em 0;
+					position: relative;
+					span{
+						font-weight: 800;
+					}
+
+				}
+
+
+				.precios_text_flexible{
+					background-color: #80BE2E;
+					text-align: center;
+					color:white;
+					font-family: 'Montserrat',Arial, Tahoma, sans-serif;
+					font-weight: 700;
+					line-height: 1;
+					font-size: 1.7em;//2.2
+					padding: .4em 0;
+					position: relative;
+					span{
+						font-family: 'khandregular',Arial, Tahoma, sans-serif;
+						font-size: 0.6em;
+						display: block;
+					}
+					&:after{
+						content: "+";
+						position: absolute;
+						font-family: 'khandbold',Arial, Tahoma, sans-serif;
+						font-weight: bold;
+						left: 0;
+						right: 0;
+						top: 49px;//67
+						color:white;
+						font-size: 1.3em;
+						z-index: 2;
+					}					
+				}
+
+
+				.metroplan_explain{
+					background-color: #8EC936;
+					text-align: left;
+					padding: 1.5em 1.3em;//1.7 2.7
+					line-height: 1;
+					color: white;
+					font-weight: 600;
+					font-family: 'Montserrat',Arial, Tahoma, sans-serif;
+					position: relative;
+					font-size: 1.1em;
+					&:after{
+						content: url(../img/arrow-bottom.png);
+						position: absolute;
+						left: 120px;
+						top: -11px;
+						transform:scale(0.4);
+						@include desde (sm){
+							left: 88px;
+						}
+						@include desde (lg){
+							left:108px;
+						}
+					}
+					span{
+						font-weight:700;
+					}
+					@include desde (sm){
+						padding-left: 1.2em;
+						padding-right: 1.2em;
+						font-size: .9em;
+					}
+
+					@include desde (lg){
+						padding-left: 1.3em;
+						padding-right: 2.3em;
+						font-size: 1em;
+					}
+
+					.metroplan_explain_image{
+						position: absolute;
+						width: 100px;
+						right: 22px;
+						top: 15px;
+						@include desde (sm){
+							width: 80px;
+							right: 15px;
+							top: 10px;
+						}
+						@include desde (lg){
+							right: 14px;
+							width: 105px;
+							top: 7px;
+						}
+					}
+				}
+
+
+				.precios_cta{
+					text-align: center;
+					padding: 1em;
+					.precios_cta_solicitar{
+						background-color: #fff;
+						background-color: var(--celeste02);
+						color:white;
+						font-size: 1em;//1.1
+						font-family: 'khandbold',Arial, Tahoma, sans-serif;
+						border-radius: 5px;
+						width: 75%;
+						padding-top: 3px;
+						padding-bottom: 1px;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+
+
+

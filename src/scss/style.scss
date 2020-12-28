@@ -1,0 +1,62 @@
+/*!
+ * Project: Project name
+ * Author: iCharls
+ */
+
+
+// Vendor
+@import "vendor/bootstrap";
+@import 'vendor/normalize';
+
+//mediaqueries
+
+@import "variables/media-queries";
+
+// abstracts
+@import 'abstracts/minireset';
+@import 'abstracts/print';
+
+// abstracts > Typography
+@import 'abstracts/typography';
+
+
+// Variables
+@import 'variables/mixins';
+@import 'variables/variables';
+@import 'variables/flexbox';
+
+
+
+// Layout
+
+@import 'layout/fonts';
+@import 'layout/formulario';
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/content';
+@import 'layout/footer';
+
+// components like slider, modals etc.
+//@import 'components/';
+
+/**
+ * Custom styles
+ */
+
+
+// Colors
+
+:root{
+	--color_Header:#0068A4;
+
+	--white:#ffffff;
+
+	--verde01:#71B32D;
+
+	--verde02:#4FB301;
+
+	--celeste01:#489AD0;
+
+	--celeste02:#2b86c7;
+
+}
